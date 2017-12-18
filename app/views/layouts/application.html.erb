@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Samplrfy - Royalty Free Audio Sample Library</title>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Cairo:200,400|Comfortaa:300,400,700|PT+Sans:400|Quicksand:300,400,500" rel="stylesheet">
+    <%= csrf_meta_tags %>
+    <script type="text/javascript" src="jquery.jplayer.min.js"></script>
+    <script src="jplayer.js"></script>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+
+  <nav class="navbar navbar-default nav-down">
+    <div class="container">
+      <div class="navbar-header">
+        <%= link_to "Samplrfy", root_path, class: 'navbar-brand' %>
+      </div>
+
+    <ul class="nav navbar-nav navbar-right">
+      <% if user_signed_in? %>
+        <li class="dropdown profile_dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+            <% if current_user.user_img == nil %>
+              <i class="fa fa-user-circle-o fa-2x destroy_icon" aria-hidden="true"></i>
+              <span class="caret"></span>
+              <% else %>
+                <%= image_tag current_user.user_img, class: "navbar_profile_image" %>
+              <span class="caret"></span>
+              <% end %>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="text-right"><%= link_to "My Library", user_path(current_user) %></li>
+            <li class="text-right"><%= link_to "PlayView" %></li>
+            <li class="text-right"><%= link_to "Profile Settings", edit_user_registration_path %></li>
+          </ul>
+        </li>
+
+    <!--  <li><%= link_to user_path(current_user) do %><i class="fa fa-user-circle-o fa-2x destroy_icon" aria-hidden="true"></i><% end %></li> -->
+      <li><%= link_to destroy_user_session_path, method: :delete do %><i class="fa fa-sign-out fa-2x destroy_icon" aria-hidden="true"></i><% end %></li>
+      <% else %>
+      <li class="cred_line"><%= link_to "Log In", new_user_session_path %></li>
+      <li><button class="btn sign_up_btn"><%= link_to "Join", new_user_registration_path %></button></li>
+      <% end %>
+
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right upload_ul">
+      <% if user_signed_in? %>
+      <li><button class="btn upload_nav_button"><%= link_to "Upload", new_track_path %></button></li>
+      <% end %>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right bunch">
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Leaderboards", root_path %></li>
+      <li><%= link_to root_path, class: "cart_li" do %>
+        <i class="fa fa-inbox" aria-hidden="true"></i>
+        <% end %>
+      </li>
+      <li><%= link_to root_path, class: "cart_li" do %>
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        <% end %>
+      </li>
+    </ul>
+
+    <ul class="nav navbar-nav">
+      <li>
+        <%= form_tag tracks_path, :method => 'get' do %>
+          <%= text_field_tag :search, params[:search],  placeholder: "Search...", class: "search_bar" %>
+          <%= submit_tag "Search", class: "search_bar_submit" %>
+        <% end %>
+      </li>
+
+    </ul>
+
+    </div>
+  </nav>
+
+  <% if notice %>
+  <div id="notice_wrapper">
+    <p class="notice text-center"><%= notice %></p>
+  </div>
+  <% elsif alert %>
+  <div id="notice_wrapper">
+    <p class="alert text-center"><%= alert %></p>
+  </div>
+  <% end %>
+
+
+    <div class="container-fluid">
+      <%= yield %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+
+<%= simple_form_for @track do |f| %>
+<div class="row">
+  <div class="col-xs-6"><%= f.input :title, label: "Track Name:" %></div>
+  <div class="col-xs-6"><%= f.file_field :mp3, class:"file_upload_field" %></div>
+</div>
+<%= f.input :description, label: "Track Description:" %>
+<div class="row">
+  <div class="col-xs-6 text-center"><%= select_tag(:genre_id, options_for_select(@genres), :prompt => "Select a Genre", class: "genre_select") %></div>
+  <div class="col-xs-6"><%= select_tag(:type_id, options_for_select(@types), :prompt => "Select a Type", class: "genre_select") %></div>
+</div>
+<%= f.input :price %>
+<%= f.button :submit %>
+<% end %>

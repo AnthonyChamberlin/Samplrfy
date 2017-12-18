@@ -1,0 +1,280 @@
+// Place all the styles related to the Tracks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.audio_panels_display {
+  max-width: 1400px;
+}
+
+.like {
+  font-weight: 300;
+  font-size: 10px;
+}
+
+.explore_advanced {
+ font-family: 'PT Sans', sans-serif;
+  color: rgb(48, 255, 217);
+  margin-top: 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.file_upload_field {
+  border: none !important;
+  margin-top: 30px;
+}
+
+// NAV PILLS/INDEX TAB FOR NEWEST AND TRENDING INSTANCES
+
+.nav-pills li {
+ font-family: 'PT Sans', sans-serif;
+  margin-left: 23%;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+li.active {
+  border-bottom: 2px solid #66efea;
+}
+
+.active > a {
+  background-color: transparent !important;
+}
+
+.nav-pills a {
+  color: #fff;
+}
+
+.nav-pills a:hover {
+  background-color: transparent !important;
+  color: #fff;
+}
+
+.nav-pills a:focus {
+  background-color: transparent !important;
+}
+
+
+.like_icon h5 {
+  margin-top: 15px;
+}
+
+.like_icon i {
+  margin-top: 10px;
+  margin-left: -15px;
+  font-size: 19px;
+  color: rgba(255,255,255,0.8);
+
+}
+
+
+.view_profile_btn {
+   color: rgba(255,255,255,0.7) !important;
+   border: 1px solid rgba(255,255,255,0.7) !important;
+   border-radius: 25px !important;
+   margin-top: 0px;
+   margin-bottom: 20px !important;
+   font-weight: 300 !important;
+   transition: .3s;
+}
+
+.view_profile_btn:hover {
+  color: rgba(255,255,255,1) !important;
+  border: 1px solid rgba(255,255,255,1) !important;
+  background-color: rgba(102, 239, 234,0.2) !important;
+  transition: .3s;
+}
+
+.how_many h6 {
+  color: rgb(114, 224, 215);
+ font-family: 'PT Sans', sans-serif;
+  font-weight: 300;
+  margin-left: -10px;
+}
+
+.average-review-rating {
+  margin-top: 3px;
+  margin-left: -10px;
+}
+
+.reviews_block {
+  background-color: rgba(2, 14, 15, 0.7);
+  padding-top: 30px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-left: -15px;
+}
+
+.more_tracks_block {
+  background-color: rgba(2, 14, 15, 0.7);
+  padding-top: 30px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin-left: 15px;
+}
+
+.track_row_in_show {
+  background-color: rgba(0, 17, 16, 0.5);
+  border-radius: 25px;
+  margin-bottom: 6px;
+}
+
+.track_row_in_show a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.track_show_title {
+  margin-top: 100px;
+}
+
+.track_show_title h3 {
+ font-family: 'PT Sans', sans-serif;
+  color: #fff;
+  font-size: 40px;
+  margin-left: -15px;
+}
+
+.track_show_title h4 {
+ font-family: 'PT Sans', sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.comment_options {
+  margin-top: 20px;
+}
+
+.save_track_show i {
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 2px;
+  padding: 9px 9px 6px 9px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 100%;
+  transition: .3s;
+  margin-left: -6px;
+}
+
+.download_track_show i {
+  color: rgba(102, 239, 234, 0.8);
+  margin-top: 2px;
+  padding: 8px 14px 6px 14px;
+  border: 1px solid rgba(102, 239, 234, 0.8);
+  border-radius: 25px;
+  transition: .3s;
+}
+
+.save_track_show i:hover {
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: .3s;
+  cursor: pointer;
+}
+
+.download_track_show i:hover {
+  border: 1px solid rgba(102, 239, 234, 1);
+  color: rgba(102, 239, 234, 1);
+  background-color: rgba(102, 239, 234, 0.15);
+  transition: .3s;
+  cursor: pointer;
+}
+
+.full_review_row {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(158, 209, 205, 0.1);
+}
+
+.review_comment_text {
+  background-color: rgba(0, 17, 16, 0.5);
+  border-radius: 10px;
+}
+
+.genre_select {
+  background: transparent !important;
+  width: 200px;
+  height: 30px;
+  border: 1px solid rgb(48, 255, 217);
+  outline: none;
+
+}
+
+.audio_file {
+  border: none !important;
+  margin-bottom: 20px;
+}
+
+.audio_file button {
+  background-color: black !important;
+}
+
+.playView_container {
+  margin-top:230px;
+  margin-bottom: 40px;
+}
+
+.playView_btn {
+  font-family: 'Comfortaa', cursive !important;
+  color: #fff !important;
+  background-color: transparent !important;
+  border: 1px solid #fff !important;
+  padding: 10px 25px 10px 25px !important;
+  border-radius: 25px !important;
+  transition: .6s;
+}
+
+.playView_btn:hover {
+  background-color: rgba(48, 255, 217,0.3) !important;
+  transition: .6s;
+  border: 1px solid rgb(48, 255, 217) !important;
+}
+
+.track_bottom_title {
+ font-family: 'PT Sans', sans-serif;
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  left: 182px;
+}
+
+.track_bottom_artist {
+ font-family: 'PT Sans', sans-serif;
+  color: #fff;
+  position: absolute;
+  top: 5px;
+  left: 170px;
+}
+.download_bottom_button {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+
+.download_bottom_button_btn {
+  color: #fff !important;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  width: 100px;
+  border-radius: 23px !important;
+  margin-top: 15px;
+  margin-right: 10px;
+  background-color:  rgba(255, 255, 255, 0.01) !important;
+  border: 1px solid rgba(255, 255, 255, 1) !important;
+  height: 30px;
+  transition: .3s;
+}
+
+.download_bottom_button_btn a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.download_bottom_button_btn:hover {
+    background-color:  rgba(102, 255, 234, 0.4) !important;
+    transition: 1s;
+    box-shadow: 10px 10px 35px rgba(38, 38, 38, 0.6);
+}

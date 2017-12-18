@@ -1,0 +1,30 @@
+// Place all the styles related to the Reviews controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.edit_review_btn {
+  margin-top: -10px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 300 !important;
+  border-bottom: 1px solid rgba(255, 181, 102, 0.4) !important;
+  border-radius: 0px !important;
+  color: rgba(255, 181, 102, 0.4);
+  transition: .3s;
+}
+
+.edit_review_btn:hover {
+  color: rgba(255, 181, 102, 0.4) !important;
+}
+
+.remove_review_btn {
+  margin-top: -10px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 300 !important;
+  border-bottom: 1px solid rgba(255, 107, 102, 0.4) !important;
+  border-radius: 0px !important;
+  color: rgba(255, 107, 102, 0.4);
+}
+
+.remove_review_btn:hover {
+  color: rgba(255, 107, 102, 0.4) !important;
+}

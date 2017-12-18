@@ -1,0 +1,240 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.profile_container {
+  margin-top: 120px;
+}
+
+.underline_row {
+  border-bottom: 2px solid #66ffea;
+  padding-bottom: 15px;
+}
+
+.profile_username h1 {
+ font-family: 'PT Sans', sans-serif;
+  color: #fff;
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+
+.profile_username h5 {
+ font-family: 'PT Sans', sans-serif;
+  color: #fff;
+  padding-left: 30px;
+}
+
+.user_library_img {
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  box-shadow: 3px 3px 10px #282828;
+}
+
+.artist_bottom_image {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 0;
+}
+
+.table_credentials {
+  margin-top: 20px;
+}
+
+.play_btn_show {
+  margin-top: -15px;
+  font-size: 21px !important;
+ font-family: 'PT Sans', sans-serif;
+  padding: 8px 25px 6px 25px !important;
+  color: #fff !important;
+  background-color: rgb(36, 165, 161) !important;
+  border: 1px solid rgb(36, 165, 161) !important;
+  border-radius: 25px !important;
+  letter-spacing: .1em;
+
+}
+
+.follow_btn_show {
+  margin-top: -15px;
+  font-size: 10px !important;
+ font-family: 'PT Sans', sans-serif;
+  padding: 8px 25px 6px 25px !important;
+  color: #fff !important;
+  background-color: transparent !important;
+  border: 1px solid #fff !important;
+  border-radius: 25px !important;
+  letter-spacing: .1em;
+}
+
+.share_btn_show {
+  margin-top: -15px;
+  font-size: 10px !important;
+ font-family: 'PT Sans', sans-serif;
+  padding: 8px 25px 6px 25px !important;
+  color: #fff !important;
+  background-color: transparent !important;
+  border: 1px solid #fff !important;
+  border-radius: 25px !important;
+  letter-spacing: .1em;
+}
+
+.follow_btn_show:hover, .share_btn_show:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  transition: .2s;
+}
+
+.most_popular_uploads {
+ font-family: 'PT Sans', sans-serif;
+  color: #fff;
+  padding-left: 30px;
+}
+
+.most_recent_uploads {
+  margin-top: 30px;
+ font-family: 'PT Sans', sans-serif;
+  color: #fff;
+  padding-left: 30px;
+}
+
+.download_track_btn {
+  font-weight: 300 !important;
+  border: 1px solid rgba(102, 255, 234, 0.4) !important;
+  border-radius: 25px !important;
+  color: #fff;
+  background-color: rgba(102, 255, 234, 0.4);
+  padding: 7px 30px 6px 30px !important;
+}
+
+.download_track_btn:hover {
+  color: #fff !important;
+}
+
+.save_track_btn:hover {
+  color: #fff !important;
+  background-color: rgba(255,255,255, 0.2) !important;
+  transition: .3s;
+}
+
+.save_track_btn {
+  font-weight: 300 !important;
+  border: 1px solid rgba(255,255,255, 0.4) !important;
+  border-radius: 25px !important;
+  color: #fff;
+  margin-left: -15px;
+  padding: 6px 10px 4px 9px !important;
+  transition: .3s;
+}
+
+.add_to_cart_btn {
+  font-weight: 300 !important;
+  border: 1px solid rgba(102, 255, 234, 0.4) !important;
+  border-radius: 25px !important;
+  color: #fff;
+  padding: 7px 12.5px 6px 12.5px !important;
+  transition: .3s;
+}
+
+.add_to_cart_btn:hover {
+  color: #fff !important;
+  background-color: rgba(102, 255, 234, 0.2) !important;
+  transition: .3s;
+}
+
+.free_stamp, .set_price_stamp {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+}
+
+
+.track_created_row {
+  margin-bottom: 5px;
+}
+
+.track_details_col {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+}
+
+.track_update_edit_col, .track_update_remove_col {
+  background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+.edit_track_btn {
+ font-family: 'PT Sans', sans-serif;
+  font-weight: 300 !important;
+  border: 1px solid rgba(255, 181, 102, 0.4) !important;
+  border-radius: 25px !important;
+  color: #fff;
+  background-color: rgba(255, 181, 102, 0.1);
+  padding: 7px 25px 6px 25px !important;
+  transition: .3s;
+}
+
+.edit_track_btn:hover {
+  color: #fff !important;
+  background-color: rgba(255, 181, 102, 0.25);
+  transition: .3s;
+}
+
+.remove_track_btn {
+ font-family: 'PT Sans', sans-serif;
+  font-weight: 300 !important;
+  border: 1px solid rgba(255, 107, 102, 0.4) !important;
+  border-radius: 25px !important;
+  color: #fff;
+  background-color: rgba(255, 107, 102, 0.1) !important;
+  padding: 7px 15px 6px 15px !important;
+  transition: .3s;
+}
+
+.remove_track_btn:hover {
+  color: #fff !important;
+  background-color: rgba(255, 107, 102, 0.25) !important;
+  transition: .3s;
+}
+
+.review_track_btn {
+ font-family: 'PT Sans', sans-serif;
+  font-weight: 300 !important;
+  border: 1px solid rgba(255,255,255, 0.4) !important;
+  border-radius: 25px !important;
+  color: #fff;
+  background-color: rgba(255,255,255, 0.1);
+  padding: 7px 25px 6px 25px !important;
+  transition: .3s;
+}
+
+.review_track_btn:hover {
+  color: #fff !important;
+  background-color: rgba(255,255,255, 0.25);
+  transition: .3s;
+}
+
+// ----- EDIT USER PROFILE RENDER
+
+.edit_panel {
+  margin-top: 100px;
+  padding: 50px 100px 50px 100px;
+  color: #fff;
+ font-family: 'PT Sans', sans-serif;
+}
+
+.edit_panel input {
+  background-color: transparent !important;
+  border-radius: 30px;
+  border: 1px solid  #10a894;
+}
+
+.edit_panel textarea {
+  background-color: transparent !important;
+  border-radius: 30px;
+  border: 1px solid  #10a894;
+}
+
+.edit_title {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #66ffea;
+}
