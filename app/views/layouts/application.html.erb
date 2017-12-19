@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Samplrfy - Royalty Free Audio Sample Library</title>
-    <link href="https://fonts.googleapis.com/css?family=Audiowide|Cairo:200,400|Comfortaa:300,400,700|PT+Sans:400|Quicksand:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Cairo:200,400|Comfortaa:300,400,700|PT+Sans:400|Quicksand:300,400,500|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,800" rel="stylesheet">
     <%= csrf_meta_tags %>
     <script type="text/javascript" src="jquery.jplayer.min.js"></script>
     <script src="jplayer.js"></script>
@@ -24,11 +24,11 @@
       <% if user_signed_in? %>
         <li class="dropdown profile_dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-            <% if current_user.user_img == nil %>
+            <% if current_user.image == nil %>
               <i class="fa fa-user-circle-o fa-2x destroy_icon" aria-hidden="true"></i>
               <span class="caret"></span>
               <% else %>
-                <%= image_tag current_user.user_img, class: "navbar_profile_image" %>
+                <%= image_tag current_user.image , class: "navbar_profile_image" %>
               <span class="caret"></span>
               <% end %>
           </a>
