@@ -35,6 +35,26 @@
   </div>
   <% end %>
 
+
+  <div class="genre_select_container">
+    <div class="row genre_select_row genres_home">
+      <div class="col-xs-2 genre_select_col">
+        <div class="text-center">
+          <h4>Select by Genre</h4>
+        </div>
+      </div>
+
+      <div class="col-xs-10">
+        <ul class="genre_ul">
+          <li class="genre_li"><h5><%= link_to "All", tracks_path %></h5></li>
+              <% Genre.all.each do |genre| %>
+                <li class="<%= 'highlight' if params[:genre] == genre.name %> text-center genre_li"><h5><%= link_to genre.name, tracks_path(genre: genre.name), class: "link" %></h5></li>
+              <% end %>
+        </ul>
+      </div>
+    </div><!-- / genre_select_row -->
+  </div>
+
   <div class="down_arrow">
     <div class="text-center">
   <%= image_tag 'arrow_down.gif', :alt => 'logo' %>
