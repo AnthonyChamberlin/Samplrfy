@@ -1,0 +1,68 @@
+<div class="container-fluid root_index_container">
+  <% if user_signed_in? %>
+    <div class="index_int_container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="text-center index_title">The World of Royalty Free Audio.</h1>
+          <h4 class="text-center index_desc">The Professional Audio Library free for Personal and Commercial Use.</h4>
+          <div class="text-center"><%= form_tag tracks_path, :method => 'get' do %>
+            <%= text_field_tag :search, params[:search],  placeholder: "Search by Track, Genre or Artist", class: "search_bar_index" %>
+            <%= submit_tag "Search", class: "search_bar_submit_index" %>
+          <% end %>
+        </div>
+        <div class="text-center explore_advanced">
+          <h6>Advanced Search</h6>
+        </div>
+        </div>
+      </div>
+    </div>
+  <% else %>
+  <div class="index_int_container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="text-center index_title">The World of Royalty Free Audio.</h1>
+        <h4 class="text-center index_desc">The Professional Audio Library free for Personal and Commercial Use.</h4>
+        <div class="text-center"><%= form_tag tracks_path, :method => 'get' do %>
+          <%= text_field_tag :search, params[:search],  placeholder: "Search by Track, Genre or Artist", class: "search_bar_index" %>
+          <%= submit_tag "Search", class: "search_bar_submit_index" %>
+        <% end %>
+      </div>
+      <div class="text-center explore_advanced">
+        <h6>Advanced Search</h6>
+      </div>
+      </div>
+    </div>
+  </div>
+  <% end %>
+
+  <div class="down_arrow">
+    <div class="text-center">
+  <%= image_tag 'arrow_down.gif', :alt => 'logo' %>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="inner-home-col">
+        <div class="text-center">
+          <h4>Point One</h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="inner-home-col">
+        <div class="text-center">
+          <h4>Point Two</h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="inner-home-col">
+        <div class="text-center">
+          <h4>Point Three</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- end root_index_container -->
