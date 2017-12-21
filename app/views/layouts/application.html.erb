@@ -36,11 +36,10 @@
             <li class="text-right"><%= link_to "My Library", user_path(current_user) %></li>
             <li class="text-right"><%= link_to "PlayView" %></li>
             <li class="text-right"><%= link_to "Profile Settings", edit_user_registration_path %></li>
+            <li class="text-right"><%= link_to "Log out", destroy_user_session_path, :method => :delete %></li>
           </ul>
         </li>
 
-    <!--  <li><%= link_to user_path(current_user) do %><i class="fa fa-user-circle-o fa-2x destroy_icon" aria-hidden="true"></i><% end %></li> -->
-      <li><%= link_to destroy_user_session_path, method: :delete do %><i class="fa fa-sign-out fa-2x destroy_icon" aria-hidden="true"></i><% end %></li>
       <% else %>
       <li class="cred_line"><%= link_to "Log In", new_user_session_path %></li>
       <li><button class="btn sign_up_btn"><%= link_to "Join", new_user_registration_path %></button></li>
@@ -56,7 +55,7 @@
 
     <ul class="nav navbar-nav navbar-right bunch">
       <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "Leaderboards", root_path %></li>
+      <li><%= link_to "Universe", tracks_path %></li>
       <li><%= link_to root_path, class: "cart_li" do %>
         <i class="fa fa-inbox" aria-hidden="true"></i>
         <% end %>
@@ -71,7 +70,7 @@
       <li>
         <%= form_tag tracks_path, :method => 'get' do %>
           <%= text_field_tag :search, params[:search],  placeholder: "Search...", class: "search_bar" %>
-          <%= submit_tag "Search", class: "search_bar_submit" %>
+          <%= submit_tag "Go", class: "search_bar_submit" %>
         <% end %>
       </li>
 

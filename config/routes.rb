@@ -12,5 +12,5 @@ Rails.application.routes.draw do
   end
 
   resources :users
-  root 'tracks#index'
+  root 'pages#home'
 end

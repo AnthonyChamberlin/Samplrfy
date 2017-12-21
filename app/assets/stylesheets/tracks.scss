@@ -12,11 +12,14 @@
 }
 
 .explore_advanced {
- font-family: 'PT Sans', sans-serif;
   color: rgb(48, 255, 217);
   margin-top: 20px;
-  font-weight: 300;
   cursor: pointer;
+}
+
+.explore_advanced h6 {
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 100;
 }
 
 .file_upload_field {
