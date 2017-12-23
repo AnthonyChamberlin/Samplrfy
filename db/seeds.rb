@@ -53,40 +53,74 @@ brian_eno = User.create!(first_name: "Brian", last_name: "Eno", username: "Brian
 netsky = User.create!(first_name: "Netsky", last_name: "", username: "Netsky", password: "123456", email:"netsky@samplrfy.com", remote_image_url:"https://res.cloudinary.com/dbe5xk4jk/image/upload/v1513792326/fullsizeoutput_15e_koq0lm.jpg")
 berger = User.create!(first_name: "Elliot", last_name: "Berger", username: "Elliot Berger", password: "123456", email:"elliot@samplrfy.com", remote_image_url:"https://res.cloudinary.com/dbe5xk4jk/image/upload/v1513801723/4d9f0a3b5a3ecc95d1eb284cd4daeb61329fe424_ytx3hp.jpg")
 format_b = User.create!(first_name: "Format", last_name: "B", username: "Format:B", password: "123456", email:"formatb@samplrfy.com", remote_image_url:"https://res.cloudinary.com/dbe5xk4jk/image/upload/v1513701797/qgyb5pjlcccyax5brr1k.jpg")
+matt_corby = User.create!(first_name: "Matt", last_name: "Corby", username: "Matt Corby", password: "123456", email:"matt@samplrfy.com", remote_image_url:"https://res.cloudinary.com/dbe5xk4jk/image/upload/v1513948124/mc_myicjg.jpg" )
 
 
 # --- T R A C K S
 
-Track.create!(title: "Shelter", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: d_r_h, genre: acoustic, price: 2.99, type: full, mp3: "https://res.cloudinary.com/dbe5xk4jk/video/upload/v1513870650/David_Ryan_Harris__Shelter__w7yikx.mp3")
+shelter = Track.create!(title: "Shelter", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: d_r_h, genre: acoustic, price: 2.99, type: full, mp3: "https://res.cloudinary.com/dbe5xk4jk/video/upload/v1513870650/David_Ryan_Harris__Shelter__w7yikx.mp3")
 
-Track.create!(title: "Come Alive", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: netsky, genre: dnb, price: 0.99, type: full, mp3:"https://res.cloudinary.com/dbe5xk4jk/video/upload/v1513872111/Netsky_-_Come_Alive_-_Official_Video_vyentn.mp3")
+come_alive = Track.create!(title: "Come Alive", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: netsky, genre: dnb, price: 0.99, type: full, mp3:"https://res.cloudinary.com/dbe5xk4jk/video/upload/v1513872111/Netsky_-_Come_Alive_-_Official_Video_vyentn.mp3")
 
-Track.create!(title: "The Way Home", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: john_mayer, genre: country, price: 19.99, type: full, mp3: "https://res.cloudinary.com/dbe5xk4jk/video/upload/v1513872283/John_Mayer_-_On_The_Way_Home_Studio_Version_j0qhzy.mp3")
+way_home = Track.create!(title: "The Way Home", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: john_mayer, genre: country, price: 19.99, type: full, mp3: "https://res.cloudinary.com/dbe5xk4jk/video/upload/v1513872283/John_Mayer_-_On_The_Way_Home_Studio_Version_j0qhzy.mp3")
 
-Track.create!(title: "Small Bump", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: ed_sheeran, genre: acoustic, price: 199.99, type: full, mp3: "https://res.cloudinary.com/dbe5xk4jk/video/upload/v1513872433/Ed_Sheeran_-_Small_Bump_ttfpwj.mp3")
+small_bump = Track.create!(title: "Small Bump", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: ed_sheeran, genre: acoustic, price: 199.99, type: full, mp3: "https://res.cloudinary.com/dbe5xk4jk/video/upload/v1513872433/Ed_Sheeran_-_Small_Bump_ttfpwj.mp3")
 
-Track.create!(title: "Sanctis", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: worakls, genre: techno, price: 62.99, type: full, mp3: "https://res.cloudinary.com/dbe5xk4jk/video/upload/v1513876191/Worakls_-_Sanctis_oexjgc.mp3")
+sanctis = Track.create!(title: "Sanctis", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: worakls, genre: techno, price: 62.99, type: full, mp3: "https://res.cloudinary.com/dbe5xk4jk/video/upload/v1513876191/Worakls_-_Sanctis_oexjgc.mp3")
 
-Track.create!(title: "Black Bird", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: fat_freddy, genre: acoustic, price: 1.99, type: full)
+black_bird = Track.create!(title: "Black Bird", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: fat_freddy, genre: acoustic, price: 1.99, type: full)
 
-Track.create!(title: "An Ending", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: brian_eno, genre: acoustic, price: 0.89, type: full)
+an_ending = Track.create!(title: "An Ending", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: brian_eno, genre: acoustic, price: 0.89, type: full)
 
-Track.create!(title: "Welcome to Jamrock", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: damien_marley, genre: dub, price: 4.49, type: full)
+jamrock = Track.create!(title: "Welcome to Jamrock", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: damien_marley, genre: dub, price: 4.49, type: full)
 
-Track.create!(title: "Heart of Life", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: john_mayer, genre: blues, price: 12.99, type: full)
+heart_of_life = Track.create!(title: "Heart of Life", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: john_mayer, genre: blues, price: 12.99, type: full)
 
-Track.create!(title: "Anticipation", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: berger, genre: trip_hop, price: 0.99, type: full)
+anticipation = Track.create!(title: "Anticipation", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: berger, genre: trip_hop, price: 0.99, type: full)
 
-Track.create!(title: "Try", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: john_mayer, genre: blues, price: 0.99, type: full)
+try = Track.create!(title: "Try", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: john_mayer, genre: blues, price: 0.99, type: full)
 
-Track.create!(title: "Nocturne", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: worakls, genre: techno, price: 7.99, type: full, mp3: "https://res.cloudinary.com/dbe5xk4jk/video/upload/v1513876128/Worakls_-_Nocturne_lchi6y.mp3")
+nocturne = Track.create!(title: "Nocturne", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: worakls, genre: techno, price: 7.99, type: full, mp3: "https://res.cloudinary.com/dbe5xk4jk/video/upload/v1513876128/Worakls_-_Nocturne_lchi6y.mp3")
 
-Track.create!(title: "Man on the Side", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: john_mayer, genre: acoustic, price: 0, type: full)
+man_side = Track.create!(title: "Man on the Side", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: john_mayer, genre: acoustic, price: 0, type: full)
 
-Track.create!(title: "Us", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: d_r_h, genre: acoustic, price: 3.69, type: full)
+us = Track.create!(title: "Us", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: d_r_h, genre: acoustic, price: 3.69, type: full)
 
-Track.create!(title: "Sunshine", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: d_r_h, genre: acoustic, price: 5.99, type: full)
+sunshine = Track.create!(title: "Sunshine", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: d_r_h, genre: acoustic, price: 5.99, type: full)
 
-Track.create!(title: "Chunky", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: format_b, genre: house, price: 1.99, type: full, mp3: "https://res.cloudinary.com/dbe5xk4jk/video/upload/v1513705041/FormatB_-_Chunky_cz9i9v.mp3")
+chunky = Track.create!(title: "Chunky", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: format_b, genre: house, price: 1.99, type: full, mp3: "https://res.cloudinary.com/dbe5xk4jk/video/upload/v1513705041/FormatB_-_Chunky_cz9i9v.mp3")
 
-Track.create!(title: "Inner City Blues", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: john_mayer, genre: soul, price: 4.99, type: full, mp3: "")
+city_blues = Track.create!(title: "Inner City Blues", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: john_mayer, genre: soul, price: 4.99, type: full, mp3: "")
+
+belly_side_up = Track.create!(title: "Belly Side Up", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: matt_corby, genre: soul, price: 6.99, type: full, mp3: "https://res.cloudinary.com/dbe5xk4jk/video/upload/v1513948381/Matt_Corby_-_Belly_Side_Up_Live_at_The_Forum_Theatre_ptyyqs.mp3")
+
+
+# ----- R E V I E W S
+
+Review.create!([
+  {rating: 4, comment: "Dreamcatcher copper mug lo-fi blog schlitz. Forage cliche viral, tilde hell of gochujang deep v sartorial pickled knausgaard pabst.", user: ed_sheeran, track: shelter},
+  {rating: 5, comment: "Slow-carb yr glossier distillery. Unicorn pok pok adaptogen tacos.", user: john_mayer, track: shelter},
+  {rating: 4, comment: "Raw denim kombucha poke air plant ugh everyday carry banh mi letterpress forage beard marfa actually.", user: ant_chamberlin, track: shelter},
+  {rating: 4, comment: "Gochujang ugh deep v craft beer typewriter. ", user: brian_eno, track: shelter},
+  ])
+
+
+Review.create!([
+  {rating: 3, comment: "Dreamcatcher copper mug lo-fi blog schlitz. Forage cliche viral, tilde hell of gochujang deep v sartorial pickled knausgaard pabst.", user: fat_freddy, track: come_alive},
+  {rating: 5, comment: "Slow-carb yr glossier distillery. Unicorn pok pok adaptogen tacos.", user: worakls, track: come_alive},
+  {rating: 3, comment: "Raw denim kombucha poke air plant ugh everyday carry banh mi letterpress forage beard marfa actually.", user: format_b, track: come_alive},
+  {rating: 4, comment: "Gochujang ugh deep v craft beer typewriter. ", user: brian_eno, track: come_alive},
+  ])
+
+Review.create!([
+  {rating: 3, comment: "Dreamcatcher copper mug lo-fi blog schlitz. Forage cliche viral, tilde hell of gochujang deep v sartorial pickled knausgaard pabst.", user: fat_freddy, track: way_home},
+  {rating: 5, comment: "Slow-carb yr glossier distillery. Unicorn pok pok adaptogen tacos.", user: worakls, track: way_home},
+  {rating: 3, comment: "Raw denim kombucha poke air plant ugh everyday carry banh mi letterpress forage beard marfa actually.", user: format_b, track: way_home},
+  {rating: 2, comment: "Selfies leggings hammock narwhal williamsburg. Blog freegan meditation pabst aesthetic typewriter. ", user: brian_eno, track: way_home},
+  {rating: 5, comment: "Actually pok pok jianbing, adaptogen messenger bag quinoa hot chicken snackwave.", user: ant_chamberlin, track: way_home},
+  {rating: 5, comment: "Photo booth brooklyn pabst master cleanse distillery flexitarian retro chillwave pickled. Hexagon yuccie keffiyeh bicycle rights, pabst mumblecore bespoke hammock.", user: d_r_h, track: way_home},
+  {rating: 4, comment: "Dreamcatcher copper mug lo-fi blog schlitz. Forage cliche viral, tilde hell of gochujang deep v sartorial pickled knausgaard pabst.", user: ed_sheeran, track: way_home},
+  {rating: 4, comment: "Gochujang ugh deep v craft beer typewriter. ", user: berger, track: way_home},
+  {rating: 5, comment: "Selfies leggings hammock narwhal williamsburg. Blog freegan meditation pabst aesthetic typewriter.  ", user: damien_marley, track: way_home},
+  {rating: 3, comment: "Hexagon yuccie keffiyeh bicycle rights, pabst mumblecore bespoke hammock. ", user: netsky, track: way_home}
+  ])

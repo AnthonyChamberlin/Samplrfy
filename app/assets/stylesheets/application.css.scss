@@ -37,7 +37,7 @@ body {
   background:image-url('index_back_dark.jpg') no-repeat fixed;
   background-color: #111111;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
    /*background: -webkit-linear-gradient(left top, #212323, #4b4f4f);
    background-repeat: no-repeat;
    background-size:100%; */
@@ -279,13 +279,14 @@ nav a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
   color: #fff;
-  font-size:42px;
+  font-size:37px;
   margin-top: 40px;
 }
 
 .index_desc {
-font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 300;
+  font-size: 1.17em;
   line-height: 1.5em;
   letter-spacing: 0.04em;
   margin-top: 20px;
@@ -319,6 +320,7 @@ font-family: 'Quicksand', sans-serif;
   margin-bottom: 30px;
   margin-top: 120px;
 }
+
 
 .genre_select_col h4 {
 font-family: 'Montserrat', sans-serif;
@@ -474,6 +476,16 @@ font-family: 'Quicksand', sans-serif;
   margin-top: 5px;
 }
 
+.bottom_player {
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 50px;
+  margin: 0%;
+  background-color: rgb(9, 26, 28);
+}
+
 // ----- LOGIN VIEW RENDERED FORM STYLES
 
 
@@ -484,7 +496,16 @@ font-family: 'Quicksand', sans-serif;
   border-radius: 50px;
   padding: 50px 100px 50px 100px;
   color: #fff;
-font-family: 'Quicksand', sans-serif;
+}
+
+.login_panel h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
+.form-inputs {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
 }
 
 .login_panel a {
@@ -586,6 +607,7 @@ font-family: 'Quicksand', sans-serif;
 
 .audio_panel {
   font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
   color: #fff;
   margin: 10px;
   width: 360px;

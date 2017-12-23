@@ -55,13 +55,9 @@
 
     <ul class="nav navbar-nav navbar-right bunch">
       <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "Universe", tracks_path %></li>
+      <li><%= link_to "Library", tracks_path %></li>
       <li><%= link_to root_path, class: "cart_li" do %>
         <i class="fa fa-inbox" aria-hidden="true"></i>
-        <% end %>
-      </li>
-      <li><%= link_to root_path, class: "cart_li" do %>
-        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
         <% end %>
       </li>
     </ul>
