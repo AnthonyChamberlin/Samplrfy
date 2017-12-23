@@ -32,9 +32,11 @@
 
 
         <div class="how_many">
-          <% if @track.reviews.count == 1 %>
+          <% if @track.reviews.count == nil %>
+            <h6>Based on <%= @track.reviews.count %> reviews</h6>
+          <% elsif @track.reviews.count == 1 %>
             <h6>Based on <%= @track.reviews.count %> review</h6>
-          <% elsif @track.reviews.count != 1 %>
+          <% elsif @track.reviews.count > 1 %>
             <h6>Based on <%= @track.reviews.count %> reviews</h6>
           <% end %>
         </div>
@@ -153,7 +155,7 @@
           </div>
         </div>
       </div>
-
+  </div>
 
 <!-- Scripts for Raty.js -->
 <script>

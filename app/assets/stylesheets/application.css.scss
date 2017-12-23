@@ -476,6 +476,16 @@ font-family: 'Quicksand', sans-serif;
   margin-top: 5px;
 }
 
+.bottom_player {
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 50px;
+  margin: 0%;
+  background-color: rgb(9, 26, 28);
+}
+
 // ----- LOGIN VIEW RENDERED FORM STYLES
 
 
@@ -486,7 +496,16 @@ font-family: 'Quicksand', sans-serif;
   border-radius: 50px;
   padding: 50px 100px 50px 100px;
   color: #fff;
-font-family: 'Quicksand', sans-serif;
+}
+
+.login_panel h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
+.form-inputs {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
 }
 
 .login_panel a {
@@ -588,6 +607,7 @@ font-family: 'Quicksand', sans-serif;
 
 .audio_panel {
   font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
   color: #fff;
   margin: 10px;
   width: 360px;
