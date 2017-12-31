@@ -328,6 +328,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/app\/assets\/javascripts\/pages.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/app\/assets\/javascripts\/pages.js",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1,
+		"tS": 1
+		},
 	"\/app\/assets\/javascripts\/reviews.coffee": {
 		"ft": 32,
 		"ma": 0,
@@ -383,6 +394,29 @@
 		"oAP": "\/app\/assets\/stylesheets\/jplayer.blue.monday-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"\/app\/assets\/stylesheets\/pages.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/app\/assets\/stylesheets\/pages.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/app\/assets\/stylesheets\/pages.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/app\/assets\/stylesheets\/pages.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"\/app\/assets\/stylesheets\/reviews.scss": {
 		"aP": 0,
@@ -471,6 +505,13 @@
 		"oAP": "\/app\/controllers\/concerns\/.keep",
 		"oF": 0
 		},
+	"\/app\/controllers\/pages_controller.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/controllers\/pages_controller.rb",
+		"oF": 0
+		},
 	"\/app\/controllers\/reviews_controller.rb": {
 		"cB": 0,
 		"ft": 8192,
@@ -497,6 +538,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/app\/helpers\/application_helper.rb",
+		"oF": 0
+		},
+	"\/app\/helpers\/pages_helper.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/helpers\/pages_helper.rb",
 		"oF": 0
 		},
 	"\/app\/helpers\/reviews_helper.rb": {
@@ -707,6 +755,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/app\/views\/layouts\/mailer.text.erb",
+		"oF": 0
+		},
+	"\/app\/views\/pages\/home.html.erb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/app\/views\/pages\/home.html.erb",
 		"oF": 0
 		},
 	"\/app\/views\/reviews\/_form.html.erb": {
@@ -1157,6 +1212,13 @@
 		"oAP": "\/db\/migrate\/20171219161208_add_image_to_users.rb",
 		"oF": 0
 		},
+	"\/db\/migrate\/20171221204442_add_bio_to_users.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/db\/migrate\/20171221204442_add_bio_to_users.rb",
+		"oF": 0
+		},
 	"\/db\/schema.rb": {
 		"cB": 0,
 		"ft": 8192,
@@ -1301,13 +1363,6 @@
 		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/001\/original\/Broken_Time_-_John_Mayer_(New_Song).mp3",
 		"oF": 0
 		},
-	"\/public\/system\/tracks\/mp3s\/000\/000\/001\/original\/Netsky_-_Come_Alive_-_Official_Video.mp3": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/001\/original\/Netsky_-_Come_Alive_-_Official_Video.mp3",
-		"oF": 0
-		},
 	"\/public\/system\/tracks\/mp3s\/000\/000\/002\/original\/FormatB__-_Chunky.mp3": {
 		"cB": 0,
 		"ft": 8192,
@@ -1322,20 +1377,6 @@
 		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/002\/original\/The_Heart_of_Life_-_John_Mayer.mp3",
 		"oF": 0
 		},
-	"\/public\/system\/tracks\/mp3s\/000\/000\/003\/original\/The_Heart_of_Life_-_John_Mayer.mp3": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/003\/original\/The_Heart_of_Life_-_John_Mayer.mp3",
-		"oF": 0
-		},
-	"\/public\/system\/tracks\/mp3s\/000\/000\/004\/original\/Worakls_-_Sanctis.mp3": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/004\/original\/Worakls_-_Sanctis.mp3",
-		"oF": 0
-		},
 	"\/public\/system\/tracks\/mp3s\/000\/000\/005\/original\/Wankelmut__Emma_Louise_-_My_Head_Is_A_Jungle_(MK_Radio_Edit).mp3": {
 		"cB": 0,
 		"ft": 8192,
@@ -1343,18 +1384,46 @@
 		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/005\/original\/Wankelmut__Emma_Louise_-_My_Head_Is_A_Jungle_(MK_Radio_Edit).mp3",
 		"oF": 0
 		},
-	"\/public\/system\/tracks\/mp3s\/000\/000\/005\/original\/Worakls_-_Nocturne.mp3": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/005\/original\/Worakls_-_Nocturne.mp3",
-		"oF": 0
-		},
 	"\/public\/system\/tracks\/mp3s\/000\/000\/006\/original\/Netsky_-_Come_Alive_-_Official_Video.mp3": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/006\/original\/Netsky_-_Come_Alive_-_Official_Video.mp3",
+		"oF": 0
+		},
+	"\/public\/system\/tracks\/mp3s\/000\/000\/052\/original\/David_Ryan_Harris__Shelter__w7yikx.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/052\/original\/David_Ryan_Harris__Shelter__w7yikx.mp3",
+		"oF": 0
+		},
+	"\/public\/system\/tracks\/mp3s\/000\/000\/053\/original\/Netsky_-_Come_Alive_-_Official_Video_vyentn.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/053\/original\/Netsky_-_Come_Alive_-_Official_Video_vyentn.mp3",
+		"oF": 0
+		},
+	"\/public\/system\/tracks\/mp3s\/000\/000\/054\/original\/John_Mayer_-_On_The_Way_Home_Studio_Version_j0qhzy.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/054\/original\/John_Mayer_-_On_The_Way_Home_Studio_Version_j0qhzy.mp3",
+		"oF": 0
+		},
+	"\/public\/system\/tracks\/mp3s\/000\/000\/055\/original\/Ed_Sheeran_-_Small_Bump_ttfpwj.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/055\/original\/Ed_Sheeran_-_Small_Bump_ttfpwj.mp3",
+		"oF": 0
+		},
+	"\/public\/system\/tracks\/mp3s\/000\/000\/056\/original\/Worakls_-_Sanctis_oexjgc.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/056\/original\/Worakls_-_Sanctis_oexjgc.mp3",
 		"oF": 0
 		},
 	"\/public\/system\/tracks\/mp3s\/000\/000\/057\/original\/Broken_Time_-_John_Mayer_(New_Song).mp3": {
@@ -1399,6 +1468,13 @@
 		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/062\/original\/Worakls___Bleu_Original_Mix.mp3",
 		"oF": 0
 		},
+	"\/public\/system\/tracks\/mp3s\/000\/000\/063\/original\/Worakls_-_Nocturne_lchi6y.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/063\/original\/Worakls_-_Nocturne_lchi6y.mp3",
+		"oF": 0
+		},
 	"\/public\/system\/tracks\/mp3s\/000\/000\/064\/original\/John_Mayer_-_Man_On_The_Side_(Acoustic).mp3": {
 		"cB": 0,
 		"ft": 8192,
@@ -1420,11 +1496,25 @@
 		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/067\/original\/Damian_Marley_-_Road_To_Zion_ft._Nas_Official_Video.mp3",
 		"oF": 0
 		},
+	"\/public\/system\/tracks\/mp3s\/000\/000\/067\/original\/FormatB_-_Chunky_cz9i9v.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/067\/original\/FormatB_-_Chunky_cz9i9v.mp3",
+		"oF": 0
+		},
 	"\/public\/system\/tracks\/mp3s\/000\/000\/068\/original\/Broken_Time_-_John_Mayer_(New_Song).mp3": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/068\/original\/Broken_Time_-_John_Mayer_(New_Song).mp3",
+		"oF": 0
+		},
+	"\/public\/system\/tracks\/mp3s\/000\/000\/069\/original\/Matt_Corby_-_Belly_Side_Up_Live_at_The_Forum_Theatre_ptyyqs.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/069\/original\/Matt_Corby_-_Belly_Side_Up_Live_at_The_Forum_Theatre_ptyyqs.mp3",
 		"oF": 0
 		},
 	"\/public\/system\/tracks\/mp3s\/000\/000\/072\/original\/John_Mayer_-_Inner_City_Blues_(Home_Demo).mp3": {
@@ -1516,6 +1606,41 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/088\/original\/Joachim_Pastor_-_Joda_(Worakls_Remix).mp3",
+		"oF": 0
+		},
+	"\/public\/system\/tracks\/mp3s\/000\/000\/103\/original\/David_Ryan_Harris__Shelter__w7yikx.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/103\/original\/David_Ryan_Harris__Shelter__w7yikx.mp3",
+		"oF": 0
+		},
+	"\/public\/system\/tracks\/mp3s\/000\/000\/104\/original\/Netsky_-_Come_Alive_-_Official_Video_vyentn.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/104\/original\/Netsky_-_Come_Alive_-_Official_Video_vyentn.mp3",
+		"oF": 0
+		},
+	"\/public\/system\/tracks\/mp3s\/000\/000\/105\/original\/John_Mayer_-_On_The_Way_Home_Studio_Version_j0qhzy.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/105\/original\/John_Mayer_-_On_The_Way_Home_Studio_Version_j0qhzy.mp3",
+		"oF": 0
+		},
+	"\/public\/system\/tracks\/mp3s\/000\/000\/106\/original\/Ed_Sheeran_-_Small_Bump_ttfpwj.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/106\/original\/Ed_Sheeran_-_Small_Bump_ttfpwj.mp3",
+		"oF": 0
+		},
+	"\/public\/system\/tracks\/mp3s\/000\/000\/117\/original\/FormatB_-_Chunky_cz9i9v.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/system\/tracks\/mp3s\/000\/000\/117\/original\/FormatB_-_Chunky_cz9i9v.mp3",
 		"oF": 0
 		},
 	"\/public\/system\/users\/user_imgs\/000\/000\/001\/original\/fullsizeoutput_13c.jpeg": {
@@ -2223,6 +2348,20 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/spec\/controllers\/pages_controller_spec.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/spec\/controllers\/pages_controller_spec.rb",
+		"oF": 0
+		},
+	"\/spec\/helpers\/pages_helper_spec.rb": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/spec\/helpers\/pages_helper_spec.rb",
+		"oF": 0
+		},
 	"\/spec\/rails_helper.rb": {
 		"cB": 0,
 		"ft": 8192,
@@ -2409,13 +2548,6 @@
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "\/build\/tmp\/cache",
-		"oF": 0
-		},
-	"\/tmp\/pids\/server.pid": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/tmp\/pids\/server.pid",
 		"oF": 0
 		},
 	"\/tmp\/restart.txt": {
