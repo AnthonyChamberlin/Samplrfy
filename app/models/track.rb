@@ -5,6 +5,8 @@ class Track < ApplicationRecord
   has_many :reviews
   belongs_to :type
 
+  validates_uniqueness_of :title, :case_sensitive => false
+
   has_attached_file :mp3
   validates_attachment :mp3, :content_type => { :content_type => ["audio/mpeg", "audio/mp3"] }, :file_name => { :matches => [/mp3\Z/] }
 
@@ -13,7 +15,7 @@ class Track < ApplicationRecord
 
   def self.search(search)
     if search
-      where(["title LIKE ?", "%#{search}%"]).order("created_at DESC")
+      where(["lower(title) LIKE ?", "%#{search}%"]).order("created_at DESC")
     else
       all
     end
