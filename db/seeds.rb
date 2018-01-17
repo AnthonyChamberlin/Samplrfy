@@ -74,7 +74,7 @@ an_ending = Track.create!(title: "An Ending", description:"Lorem ipsum dolor ame
 
 jamrock = Track.create!(title: "Welcome to Jamrock", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: damien_marley, genre: dub, price: 4.49, type: full)
 
-heart_of_life = Track.create!(title: "Heart of Life", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: john_mayer, genre: blues, price: 12.99, type: full)
+heart_of_life = Track.create!(title: "Heart of Life", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: john_mayer, genre: blues, price: 12.99, type: full, mp3:"https://res.cloudinary.com/dbe5xk4jk/video/upload/v1516198977/John_Mayer_Heart_of_Life_qaivjh.mp3")
 
 anticipation = Track.create!(title: "Anticipation", description:"Lorem ipsum dolor amet helvetica dreamcatcher etsy vape tousled shabby chic mumblecore messenger bag hell of four loko literally try-hard.", user: berger, genre: trip_hop, price: 0.99, type: full)
 

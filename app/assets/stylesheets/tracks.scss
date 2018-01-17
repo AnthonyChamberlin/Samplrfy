@@ -59,7 +59,6 @@ li.active {
   background-color: transparent !important;
 }
 
-
 .like_icon h5 {
   margin-top: 15px;
 }
@@ -239,11 +238,15 @@ li.active {
 }
 
 .track_bottom_title {
- font-family: 'PT Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #fff;
   position: absolute;
   top: 10px;
   left: 182px;
+}
+
+.track_bottom_title h5 {
+  font-weight: 100;
 }
 
 .track_bottom_artist {

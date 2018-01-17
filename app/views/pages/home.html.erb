@@ -1,3 +1,7 @@
+
+<video src="https://res.cloudinary.com/dbe5xk4jk/video/upload/v1516216298/Ma-Vibes-Square-2_depyey.mp4" autoplay=“true” loop type="video/mp4">
+</video>
+
 <div class="container-fluid root_index_container">
   <% if user_signed_in? %>
     <div class="index_int_container">
@@ -6,12 +10,12 @@
           <h1 class="text-center index_title">The World of Royalty Free Audio.</h1>
           <h4 class="text-center index_desc">The Professional Audio Library free for Personal and Commercial Use.</h4>
           <div class="text-center"><%= form_tag tracks_path, :method => 'get' do %>
-            <%= text_field_tag :search, params[:search],  placeholder: "Search by Track, Genre or Artist", class: "search_bar_index" %>
+            <%= text_field_tag :search, params[:search],  placeholder: "Search by Track Name", class: "search_bar_index" %>
             <%= submit_tag "Search", class: "search_bar_submit_index" %>
           <% end %>
         </div>
         <div class="text-center explore_advanced">
-          <h6>Advanced Search</h6>
+          <h6>Advanced Search (Currently Unavailable)</h6>
         </div>
         </div>
       </div>
@@ -23,12 +27,12 @@
         <h1 class="text-center index_title">The World of Royalty Free Audio.</h1>
         <h4 class="text-center index_desc">The Professional Audio Library free for Personal and Commercial Use.</h4>
         <div class="text-center"><%= form_tag tracks_path, :method => 'get' do %>
-          <%= text_field_tag :search, params[:search],  placeholder: "Search by Track, Genre or Artist", class: "search_bar_index" %>
+          <%= text_field_tag :search, params[:search],  placeholder: "Search by Track Name", class: "search_bar_index" %>
           <%= submit_tag "Search", class: "search_bar_submit_index" %>
         <% end %>
       </div>
       <div class="text-center explore_advanced">
-        <h6>Advanced Search</h6>
+        <h6>Advanced Search (Currently Unavailable)</h6>
       </div>
       </div>
     </div>
@@ -46,9 +50,9 @@
 
       <div class="col-xs-10">
         <ul class="genre_ul">
-          <li class="genre_li"><h5><%= link_to "All", tracks_path %></h5></li>
+          <li class="genre_li genre_li_home"><h5><%= link_to "All", tracks_path %></h5></li>
               <% Genre.all.each do |genre| %>
-                <li class="<%= 'highlight' if params[:genre] == genre.name %> text-center genre_li"><h5><%= link_to genre.name, tracks_path(genre: genre.name), class: "link" %></h5></li>
+                <li class="<%= 'highlight' if params[:genre] == genre.name %> text-center genre_li genre_li_home"><h5><%= link_to genre.name, tracks_path(genre: genre.name), class: "link" %></h5></li>
               <% end %>
         </ul>
       </div>
@@ -61,28 +65,4 @@
     </div>
   </div>
 
-
-  <div class="row">
-    <div class="col-md-4">
-      <div class="inner-home-col">
-        <div class="text-center">
-          <h4>Point One</h4>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="inner-home-col">
-        <div class="text-center">
-          <h4>Point Two</h4>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="inner-home-col">
-        <div class="text-center">
-          <h4>Point Three</h4>
-        </div>
-      </div>
-    </div>
-  </div>
 </div><!-- end root_index_container -->

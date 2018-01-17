@@ -95,7 +95,7 @@
   padding-left: 70px;
   width: 100%;
   border-radius:  5px;
-  background: -webkit-linear-gradient(left top, rgba(32, 229, 194, 0.9), rgba(22, 191, 229,0.9));
+  background: -webkit-linear-gradient(left, rgba(24, 25, 25, 0.99), rgba(24, 25, 25,0.99));
 }
 
 .jp-audio .jp-interface {

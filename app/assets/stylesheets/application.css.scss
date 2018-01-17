@@ -34,14 +34,14 @@
 
 
 body {
-  background:image-url('index_back_dark.jpg') no-repeat fixed;
+  margin: 0;
+  background:image-url('index_darkgrey_back.jpg') no-repeat fixed;
   background-color: #111111;
   background-repeat: no-repeat;
   background-size: cover;
    /*background: -webkit-linear-gradient(left top, #212323, #4b4f4f);
    background-repeat: no-repeat;
    background-size:100%; */
-   padding-bottom: 100px;
 }
 
 // ----- NAVIGATION BAR
@@ -49,8 +49,9 @@ body {
 .search_bar {
   margin-left: 130px;
   // background-color: rgba(66, 244, 232, 0.3);
-  background: none;
-  border: 1px solid rgba(57, 239, 221, 0.5);
+  background-color: rgba(48, 255, 217, 0.3);
+  border: none;
+  // border: 1px solid rgba(48, 255, 217, 0.65);
   border-radius: 25px;
   outline: none;
   color: #fff;
@@ -60,8 +61,13 @@ body {
 
 .search_bar:focus {
   padding: 7px 150px 7px 20px;
-  transition: .6s;
-  background-color: rgba(57, 239, 221, 0.65);
+  transition: 1.5s;
+  background-color: rgba(48, 255, 217, 0.65);
+}
+
+.search_bar:focus + .search_bar_submit {
+  background-color: rgba(102, 239, 234,0.87);
+  transition: 1s;
 }
 
 .search_bar::-webkit-input-placeholder {
@@ -81,11 +87,6 @@ body {
   transition: .3s;
 }
 
-.search_bar_submit:hover {
-  background-color: rgba(102, 239, 234,0.8);
-  transition: .3s;
-}
-
 
 .search_bar_index {
   font-family: 'Quicksand', sans-serif;
@@ -93,8 +94,8 @@ body {
   font-size: 16px;
   background-color: transparent;
   margin-top: 30px;
-  border: 1px solid rgba(57, 239, 221, 0.7);
-  border-radius: 50px;
+  border: 1px solid rgba(48, 255, 217, 0.8);
+  border-radius: 55px;
   text-indent: 15px;
   height: 60px;
   padding: 5px 30px 5px 10px;
@@ -111,7 +112,7 @@ body {
 
 .search_bar_index:focus {
   padding: 5px 30px 5px 20px;
-  background-color: rgba(57, 239, 221, 0.55);
+  background-color: rgba(48, 255, 217, 0.55);
   width: 600px;
   transition: 1s;
 }
@@ -134,10 +135,10 @@ body {
 nav {
   width: 100%;
   background-color:  transparent !important;
-  background: -webkit-linear-gradient(rgba(0, 18, 18, 1), rgba(0, 18, 18, 0.01)); /* Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(rgba(0, 18, 18, 1), rgba(0, 18, 18, 0.01)); /* Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(rgba(0, 18, 18, 1), rgba(0, 18, 18, 0.01)); /* Firefox 3.6 to 15 */
-  background: linear-gradient(rgba(0, 18, 18, 1), rgba(0, 18, 18, 0.01)); /* Standard syntax (must be last) */
+  background: -webkit-linear-gradient(rgba(45, 45, 45, 1), rgba(45, 45, 45, 0.01)); /* Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(45, 45, 45, 1), rgba(45, 45, 45, 0.01)); /* Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(45, 45, 45, 1), rgba(45, 45, 45, 0.01)); /* Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(45, 45, 45, 1), rgba(45, 45, 45, 0.01)); /* Standard syntax (must be last) */
   border: 0 !important;
   //border-bottom: 1px solid rgba(102, 239, 234, 1) !important;
   //border-bottom: 3px solid #66ffea !important;
@@ -153,10 +154,10 @@ font-family: 'Quicksand', sans-serif;
 }
 
 .navNewBackground {
-   background: -webkit-linear-gradient(rgba(0, 18, 18, 1), rgba(0, 18, 18, 0.01)); /* Safari 5.1 to 6.0 */
-   background: -o-linear-gradient(rgba(0, 18, 18, 1), rgba(0, 18, 18, 0.01)); /* Opera 11.1 to 12.0 */
-   background: -moz-linear-gradient(rgba(0, 18, 18, 1), rgba(0, 18, 18, 0.01)); /* Firefox 3.6 to 15 */
-   background: linear-gradient(rgba(0, 18, 18, 1), rgba(0, 18, 18, 0.01)); /* Standard syntax (must be last) */
+   background: -webkit-linear-gradient(rgba(45, 45, 45, 1), rgba(45, 45, 45, 0.01)); /* Safari 5.1 to 6.0 */
+   background: -o-linear-gradient(rgba(45, 45, 45, 1), rgba(45, 45, 45, 0.01)); /* Opera 11.1 to 12.0 */
+   background: -moz-linear-gradient(rgba(45, 45, 45, 1), rgba(45, 45, 45, 0.01)); /* Firefox 3.6 to 15 */
+   background: linear-gradient(rgba(45, 45, 45, 1), rgba(45, 45, 45, 0.01)); /* Standard syntax (must be last) */
   //border-bottom: 1px solid rgba(102, 239, 234, 1) !important;
   width: 100% !important;
   transition: 3s;
@@ -244,12 +245,12 @@ nav a {
 }
 
 .sign_up_btn {
-  background-color: rgba(57, 239, 221, 0.8);
+  background-color: rgba(48, 255, 217, 0.8);
   color: #fff !important;
   margin-top: 13px;
   border: none;
   border-radius: 25px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
   transition: .3s;
   padding: 8px 20px 8px 20px;
 }
@@ -607,15 +608,15 @@ font-family: 'Quicksand', sans-serif;
   margin: 10px;
   width: 360px;
   // border: 1px solid #ccc;
-  border-radius: 15px;
+  border-radius:7px;
   background-color: rgba(255, 255, 255, .1);
   padding: 0px 0px 0px 0px;
   transition: .5s;
 }
 
 .audio_panel:hover {
-  background-color: rgba(255, 255, 255, .15);
-  transition: .5s;
+  // background-color: rgba(255, 255, 255, .15);
+  // transition: .5s;
   cursor: pointer;
 }
 
@@ -679,18 +680,19 @@ font-family: 'Quicksand', sans-serif;
   font-family: 'Quicksand', sans-serif;
   font-size: 13px;
   font-weight: 400;
-  border-radius: 23px;
+  border-radius: 2px;
   margin-top: 15px;
   margin-right: 10px;
-  background-color:  rgba(57, 239, 221, 0.2) !important;
-  border: 1px solid rgba(57, 239, 221, 0.6);
+  background: none;
+  // background-color:  rgba(196, 196, 196, 0.7) !important;
+  border: 1px solid rgba(255,255,255,0.3);
   height: 30px;
   transition: .3s;
 }
 
 .download_btn_inner_panel:hover {
-    background-color:  rgba(102, 255, 234, 0.4) !important;
-    transition: .3s;
+    background-color:  rgba(255,255,255, 0.3) !important;
+    transition: .2s;
 }
 
 
@@ -702,7 +704,7 @@ font-family: 'Quicksand', sans-serif;
 }
 
 .play_button_index i {
-  border: 1px solid rgba(102, 255, 234,0.4);
+  border: 1px solid rgba(255, 255, 255,0);
   border-radius: 100%;
   padding: 8px 9px 7px 11px;
   transition: .3s;
@@ -710,8 +712,8 @@ font-family: 'Quicksand', sans-serif;
 }
 
 .play_button_index i:hover {
-  border: 1px solid rgba(102, 255, 234,1);
-  background-color: rgba(102, 255, 234, 0.2);
+  border: 1px solid rgba(255,255,255,1);
+  // background-color: rgba(102, 255, 234, 0.2);
   transition: .3s;
   cursor: pointer;
 }
