@@ -68,6 +68,36 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/app\/assets\/images\/index_darkgrey_back.jpg": {
+		"ft": 16384,
+		"iS": 4018947,
+		"oA": 0,
+		"oAP": "\/app\/assets\/images\/index_darkgrey_back.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/app\/assets\/images\/index_dimgrey_back.jpg": {
+		"ft": 16384,
+		"iS": 4188445,
+		"oA": 0,
+		"oAP": "\/app\/assets\/images\/index_dimgrey_back.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/app\/assets\/images\/index_grey_back.jpg": {
+		"ft": 16384,
+		"iS": 4245419,
+		"oA": 0,
+		"oAP": "\/app\/assets\/images\/index_grey_back.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/app\/assets\/images\/jplayer.blue.monday.jpg": {
 		"ft": 16384,
 		"iS": 74088,
@@ -2611,13 +2641,6 @@
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "\/build\/tmp\/cache",
-		"oF": 0
-		},
-	"\/tmp\/pids\/server.pid": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/tmp\/pids\/server.pid",
 		"oF": 0
 		},
 	"\/tmp\/restart.txt": {
