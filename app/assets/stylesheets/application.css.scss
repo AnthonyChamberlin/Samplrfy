@@ -118,18 +118,22 @@ body {
   transition: 1s;
 }
 
+.search_bar_index:focus + .search_bar_submit_index {
+  border: 1px solid rgba(48, 255, 217, 0.8);
+}
+
 .search_bar_submit_index {
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
   font-size: 16px;
   margin-left: -95px;
   outline: none;
-  height: 58px;
+  height: 60px;
   background-color: rgba(57, 239, 221, 0);
   color: #fff;
   border-radius: 50px;
+  border: 1px solid rgba(255,255,255, 0.8);
   padding: 5px 20px 5px 20px;
-  border: none;
   transition: .3s;
 }
 
@@ -774,4 +778,11 @@ font-family: 'Quicksand', sans-serif;
   padding: 7px 5px 5px 9px;
   width: 100px;
   border-radius: 13px;
+}
+
+
+// Media Queries
+
+@media screen and (max-width:768px) {
+
 }
