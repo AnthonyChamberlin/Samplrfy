@@ -14,3 +14,13 @@ $(document).ready(function() {
     })
   }, 3500);
 });
+
+$(document).ready(function() {
+  setTimeout(function() {
+    $('.custom-notice').addClass('notice-slide-in')
+  }, 2500);
+
+  $('.close-icon').on('click', function(){
+    $('.custom-notice').addClass('notice-slide-out');
+  });
+});
