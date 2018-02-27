@@ -42,7 +42,7 @@ video {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  width: 530px;
+  width: 450px;
   background-color: #ccc;
   padding: 5px;
   border-radius: 3px;
@@ -69,6 +69,7 @@ video {
 .close-icon {
   top: 0;
   right: 0;
+  margin-left: -5px;
   color: #7a7b7c;
 }
 

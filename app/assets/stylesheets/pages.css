@@ -28,3 +28,36 @@ video {
 
 .genre_li_home {
   background-color: rgba(48, 255, 217, 0.6) !important; }
+
+.custom-notice {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 450px;
+  background-color: #ccc;
+  padding: 5px;
+  border-radius: 3px;
+  transform: translateX(-120%);
+  transition: 1.3s; }
+
+.notice-slide-in {
+  transform: translateX(0%);
+  transition: 1.3s; }
+
+.notice-slide-out {
+  transform: translateX(-120%);
+  transition: 1.3s; }
+
+.warning-icon {
+  color: #e0612a;
+  padding-left: 6px;
+  padding-top: 2px; }
+
+.close-icon {
+  top: 0;
+  right: 0;
+  margin-left: -5px;
+  color: #7a7b7c; }
+
+.close-icon:hover {
+  cursor: pointer; }
